@@ -36,7 +36,7 @@ function Hero() {
           ecosystem.
         </p>
         <div className="lg:w-[300px] lg:h-[84px]">
-          <div className="flex justify-between items-center gap-5 font-semibold text-2xl">
+          <div className="flex justify-between items-center gap-5 font-semibold text-2xl max-w-[300px]">
             <span>Price</span>
             <span>$450</span>
           </div>
@@ -59,9 +59,7 @@ function Hero() {
   );
 }
 
-export default Hero
-
-
+export default Hero;
 
 const Card = ({ cardData }: { cardData: cardType }) => {
   return (

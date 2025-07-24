@@ -23,8 +23,8 @@ function Footer() {
       <div className="footer-container container mx-auto flex justify-between items-start flex-wrap gap-30">
         <div className="first-col flex-1">
           <Logo />
-          <p className="py-4 text-[#484848] ">Info@besnik.agency</p>
-          <p className="text-[#484848] ">+458 843 5849</p>
+          <p className="py-4 text-[#484848]">contact@ay-ub.me</p>
+          <p className="text-[#484848] ">+213123456789</p>
         </div>
         {footerColumns.map((column) => (
           <Column key={column.header} column={column} />
