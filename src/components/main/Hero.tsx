@@ -50,7 +50,7 @@ function Hero() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="right-content flex-1 flex lg:flex-col gap-3  flex-wrap">
+      <div className="right-content flex-1 flex lg:flex-col lg:items-end gap-3  flex-wrap">
         {heroCards.map((card) => (
           <Card cardData={card} key={card.title} />
         ))}
