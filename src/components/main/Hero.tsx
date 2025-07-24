@@ -50,7 +50,7 @@ function Hero() {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="right-content flex-1 flex lg:flex-col gap-3 lg:justify-center flex-wrap">
+      <div className="right-content flex-1 flex lg:flex-col gap-3  flex-wrap">
         {heroCards.map((card) => (
           <Card cardData={card} key={card.title}/>
         ))}
@@ -65,7 +65,7 @@ export default Hero
 
 const Card = ({ cardData }: { cardData: cardType }) => {
   return (
-    <div className="lg:max-w-[300px] p-4 text-justify">
+    <div className="lg:max-w-[300px] p-4 text-justify hover:shadow-2xl duration-300 rounded-sm">
       <h3 className="font-bold">{cardData.title}</h3>
       <p className="text-[#909090]">{cardData.description}</p>
     </div>
