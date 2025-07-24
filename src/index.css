@@ -1,4 +1,14 @@
 @import "tailwindcss";
-section{
-    @apply py-24
+section {
+  @apply md:py-24 py-12;
 }
+
+.container {
+  @apply container mx-auto px-4;
+}
+/* html,
+body,
+header,
+main {
+  background-color: #fff;
+} */

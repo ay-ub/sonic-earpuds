@@ -11,8 +11,8 @@ function Why() {
             "At SonicJive, we believe that technology and nature can coexist harmoniously. Our mission is to provide you with earbuds that offer exceptional sound quality while respecting our planet's delicate ecosystem. ",
         }}
       />
-      <div className="why-content flex flex-wrap justify-around items-stretch container mx-auto">
-        <div className="flex lg:flex-col justify-around items-start ">
+      <div className="why-content flex flex-wrap justify-around items-stretch container mx-auto mt-5">
+        <div className="flex lg:flex-col justify-around items-start">
           <div>
             <h3 className="text-[#31A758]  font-bold text-2xl mb-3">
               Sound quality
@@ -33,7 +33,7 @@ function Why() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex flex-col justify-around items-start ">
+        <div className="flex md:flex-col justify-around items-start ">
           <div>
             <h3 className="text-[#31A758]  font-bold text-2xl mb-3">
               Sustainable
@@ -51,9 +51,7 @@ function Why() {
         </div>
       </div>
       <div className="flex justify-center">
-        <Button>
-            Discover
-        </Button>
+        <Button>Discover</Button>
       </div>
     </section>
   );

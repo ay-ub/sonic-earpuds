@@ -1,6 +1,5 @@
 import Button from "../Button";
 
-
 function Spec() {
   return (
     <section className="container mx-auto">
@@ -13,7 +12,7 @@ function Spec() {
           />
         </div>
         <div className="info w-full lg:w-1/2">
-          <h2 className="text-6xl font-bold text-[#31A758]">
+          <h2 className="text-3xl md:text-6xl font-bold text-[#31A758]">
             Immersive Sound Quality
           </h2>
           <p className="text-[#909090] my-5">
@@ -29,7 +28,7 @@ function Spec() {
       </div>
       <div className="flex justify-between items-center flex-wrap-reverse">
         <div className="info w-full lg:w-1/2">
-          <h2 className="text-6xl font-bold text-[#31A758]">
+          <h2 className="text-3xl md:text-6xl font-bold text-[#31A758]">
             Wireless Freedom & Long Term Battery
           </h2>
           <p className="text-[#909090] my-5">
@@ -53,4 +52,4 @@ function Spec() {
   );
 }
 
-export default Spec
+export default Spec;

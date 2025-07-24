@@ -1,5 +1,3 @@
-
-
 function NewsLatter() {
   return (
     <section className="container mx-auto  ">
@@ -8,7 +6,7 @@ function NewsLatter() {
           <img src="/1.png" alt="earpuds" />
         </div>
         <div>
-          <h2 className="text-[#31A758] text-6xl font-bold">
+          <h2 className="text-[#31A758] text-3xl md:text-6xl font-bold">
             Subscribe To Our Newsletter
           </h2>
           <p className="text-[#747474] my-4">
@@ -31,4 +29,4 @@ function NewsLatter() {
   );
 }
 
-export default NewsLatter
+export default NewsLatter;
