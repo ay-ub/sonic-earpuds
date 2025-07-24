@@ -1,8 +1,11 @@
+import Hero from "./Hero"
 
 
 function Main() {
   return (
-    <div>Main</div>
+    <main>
+      <Hero />
+    </main>
   )
 }
 
