@@ -22,7 +22,7 @@ function Testimonial() {
       stars: 5,
     },
     {
-      imgUrl: "/6.png",
+      imgUrl: "/7.png",
       name: "Darell Steward",
       position: "Senior Manager at Google",
       message:
@@ -30,7 +30,7 @@ function Testimonial() {
       stars: 5,
     },
     {
-      imgUrl: "/6.png",
+      imgUrl: "/avatar.png",
       name: "Bessie Cooper",
       position: "UX Designer at Tokopedia",
       message:
@@ -45,7 +45,7 @@ function Testimonial() {
       stars: 5,
     },
     {
-      imgUrl: "/6.png",
+      imgUrl: "/image.png",
       name: "Darlene Robertson",
       position: "Product Designer at Stock",
       message:
