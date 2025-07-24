@@ -1,8 +1,9 @@
+import Logo from "../Logo";
 
 function Header() {
   return (
     <header className="flex container mx-auto items-center justify-between p-4">
-      <h2 className="logo font-semibold text-[#333] text-2xl">Sonic JIVE</h2>
+      <Logo />
       <div className="links flex items-center">
         {["Product", "Features", "Reviews", "About us"].map((link, index) => (
           <a
@@ -60,4 +61,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;
