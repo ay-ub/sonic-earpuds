@@ -1,21 +1,61 @@
+import { useState } from "react";
 import Logo from "../Logo";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <header className="flex container mx-auto items-center justify-between p-4">
+    <header className="flex container mx-auto items-center justify-between p-4 ">
       <Logo />
-      <div className="links flex items-center">
+      <div
+        className={`links flex items-center fixed left-0 top-0 bottom-0 md:relative md:flex-row md:gap-6 gap-2 flex-col duration-300
+       bg-white justify-center ${
+         isOpen
+           ? "z-10 opacity-100 w-screen h-screen visible"
+           : "z-[-1] opacity-0 invisible md:visible md:opacity-100 md:z-auto w-0"
+       }`}
+      >
         {["Product", "Features", "Reviews", "About us"].map((link, index) => (
           <a
             key={index}
             href={`#${link.toLowerCase().replace(" ", "-")}`}
-            className="px-4 text-[#707070] hover:text-[#7F6459] hover:font-semibold transition-colors duration-300"
+            className="px-4 text-[#707070] hover:text-[#7F6459] hover:font-semibold transition-colors text-nowrap
+            duration-300 text-2xl md:text-xl"
           >
             {link}
           </a>
         ))}
+        <div className="close-btn absolute top-8 right-8 md:hidden">
+          <button className="cursor-pointer md:hidden" onClick={toggleMenu}>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6M6 6L18 18"
+                stroke="#8D867F"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
       <div className="right-actions flex items-center gap-4">
+        <button
+          className="cursor-pointer burger-icon w-6 h-8 flex flex-col justify-evenly md:hidden"
+          onClick={toggleMenu}
+        >
+          <span className="block w-full h-0.5 bg-[#8D867F]"></span>
+          <span className="block w-full h-0.5 bg-[#8D867F]"></span>
+          <span className="block w-full h-0.5 bg-[#8D867F]"></span>
+        </button>
         <button className="cursor-pointer">
           <svg
             width="19"
