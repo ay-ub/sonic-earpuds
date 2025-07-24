@@ -1,5 +1,6 @@
 import Hero from "./Hero"
 import NewsLatter from "./NewsLatter"
+import Spec from "./Spec"
 import StatisticsCards from "./StatisticsCards"
 import Why from "./Why"
 
@@ -11,6 +12,7 @@ function Main() {
       <StatisticsCards />
       <Why />
       <NewsLatter />
+      <Spec />
     </main>
   )
 }
