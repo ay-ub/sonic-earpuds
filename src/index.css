@@ -1,1 +1,4 @@
 @import "tailwindcss";
+section{
+    @apply py-24
+}
