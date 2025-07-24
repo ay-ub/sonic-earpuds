@@ -30,7 +30,7 @@ function Footer() {
           <Column key={column.header} column={column} />
         ))}
         <div className="last-col flex-1">
-          <div className="col-header text-[#222222] font-bold mb-6 text-4xl">
+          <div className="col-header text-[#222222] font-bold mb-6 text-4xl text-nowrap">
             Download App
           </div>
           <div className="links text-[#484848] flex flex-col justify-between gap-4">
@@ -109,7 +109,7 @@ export default Footer;
 const Column = ({ column }: { column: footerColumn }) => {
   return (
     <div className="col flex-1">
-      <div className="col-header text-[#222222] font-bold mb-6 text-4xl">
+      <div className="col-header text-[#222222] font-bold mb-6 text-4xl text-nowrap">
         {column.header}
       </div>
       <div className="links text-[#484848] flex flex-col justify-between gap-4">
