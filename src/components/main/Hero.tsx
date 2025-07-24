@@ -21,7 +21,7 @@ function Hero() {
     },
   ];
   return (
-    <section className="flex flex-col lg:flex-row items-stretch justify-evenly container mx-auto px-4 py-8 min-h-[calc(100vh-64px)] ">
+    <section className="flex flex-col lg:flex-row items-stretch justify-evenly container mx-auto px-4 py-8">
       <div className="left-content flex-1 flex flex-col justify-start gap-10">
         <p className="text-[#31A758] ">Immerse in Nature's Sounds with </p>
         <h2 className="text-[#31A758] text-6xl uppercase font-bold">
