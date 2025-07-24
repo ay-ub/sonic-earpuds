@@ -1,6 +1,6 @@
 @import "tailwindcss";
 section {
-  @apply py-24;
+  @apply md:py-24 py-12;
 }
 
 .container {
