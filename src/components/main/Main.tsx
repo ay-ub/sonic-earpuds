@@ -1,5 +1,6 @@
 import Hero from "./Hero"
 import StatisticsCards from "./StatisticsCards"
+import Why from "./Why"
 
 
 function Main() {
@@ -7,6 +8,7 @@ function Main() {
     <main>
       <Hero />
       <StatisticsCards />
+      <Why />
     </main>
   )
 }
