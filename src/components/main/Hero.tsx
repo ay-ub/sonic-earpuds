@@ -1,3 +1,5 @@
+import Button from "../Button";
+
 type cardType = {
   title: string;
   description: string;
@@ -38,9 +40,7 @@ function Hero() {
             <span>Price</span>
             <span>$450</span>
           </div>
-          <button className="bg-[#31A758] text-white px-6 py-3 rounded-lg mt-4 hover:bg-[#28a745] transition-colors cursor-pointer w-full">
-            Order Now
-          </button>
+          <Button>Order Now</Button>
         </div>
       </div>
       <div className="center-content flex-1 relative overflow-hidden lg:w-[481px] lg:h-[481px]">
@@ -52,7 +52,7 @@ function Hero() {
       </div>
       <div className="right-content flex-1 flex lg:flex-col gap-3  flex-wrap">
         {heroCards.map((card) => (
-          <Card cardData={card} key={card.title}/>
+          <Card cardData={card} key={card.title} />
         ))}
       </div>
     </section>
