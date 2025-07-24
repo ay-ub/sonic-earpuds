@@ -3,7 +3,7 @@
 function NewsLatter() {
   return (
     <section className="container mx-auto  ">
-      <div className="bg-[#F8F8F8] flex justify-around items-center p-4">
+      <div className="bg-[#F8F8F8] flex justify-around items-center p-4 flex-wrap">
         <div className="image-container w-full lg:w-[371px] aspect-square">
           <img src="/1.png" alt="earpuds" />
         </div>
