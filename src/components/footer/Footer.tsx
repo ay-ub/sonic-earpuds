@@ -23,14 +23,14 @@ function Footer() {
       <div className="footer-container container mx-auto flex justify-between items-start flex-wrap gap-30">
         <div className="first-col flex-1">
           <Logo />
-          <p className="py-4 text-[#484848] ">Info@besnik.agency</p>
-          <p className="text-[#484848] ">+458 843 5849</p>
+          <p className="py-4 text-[#484848]">contact@ay-ub.me</p>
+          <p className="text-[#484848] ">+213123456789</p>
         </div>
         {footerColumns.map((column) => (
           <Column key={column.header} column={column} />
         ))}
         <div className="last-col flex-1">
-          <div className="col-header text-[#222222] font-bold mb-6 text-4xl">
+          <div className="col-header text-[#222222] font-bold mb-6 text-4xl text-nowrap">
             Download App
           </div>
           <div className="links text-[#484848] flex flex-col justify-between gap-4">
@@ -109,7 +109,7 @@ export default Footer;
 const Column = ({ column }: { column: footerColumn }) => {
   return (
     <div className="col flex-1">
-      <div className="col-header text-[#222222] font-bold mb-6 text-4xl">
+      <div className="col-header text-[#222222] font-bold mb-6 text-4xl text-nowrap">
         {column.header}
       </div>
       <div className="links text-[#484848] flex flex-col justify-between gap-4">
